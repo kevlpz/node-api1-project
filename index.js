@@ -92,4 +92,4 @@ server.put('/api/users/:id', (req, res) => {
         });
 })
 
-server.listen(5000, () => console.log('server on 5000'));
+server.listen(process.env.PORT || 5000, () => console.log('server running'));
